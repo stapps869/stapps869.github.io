@@ -445,30 +445,28 @@
 		<footer class="footer" id="contact">
 			<div class="container">
 				<div class="row">
-                    <!-- Load Facebook SDK for JavaScript -->
-                    <div id="fb-root"></div>
+                    <!-- footer Chat -->
                     <script>
                         window.fbAsyncInit = function() {
                             FB.init({
+                                    appId            : '252299175716911',
+                                    autoLogAppEvents : true,
                                     xfbml            : true,
-                                    version          : 'v3.2'
+                                    version          : 'v2.11'
                                     });
                         };
                     
-                    (function(d, s, id) {
+                    (function(d, s, id){
                      var js, fjs = d.getElementsByTagName(s)[0];
-                     if (d.getElementById(id)) return;
+                     if (d.getElementById(id)) {return;}
                      js = d.createElement(s); js.id = id;
-                     js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+                     js.src = "https://connect.facebook.net/vi_VN/sdk.js";
                      fjs.parentNode.insertBefore(js, fjs);
-                     }(document, 'script', 'facebook-jssdk'));</script>
+                     }(document, 'script', 'facebook-jssdk'));
+                        </script>
+                    <div class="fb-customerchat" page_id="172059780026559"</div>
+                    <!-- footer Chat -->
                     
-                    <!-- Your customer chat code -->
-                    <div class="fb-customerchat"
-                        attribution=setup_tool
-                        page_id="252299175716911">
-                    </div>
-                    <!-- End Load Facebook SDK for JavaScript -->
                     <div class="col-lg-6">
 						<div class="contact-form">
 							<h4>Get in Touch</h4>
